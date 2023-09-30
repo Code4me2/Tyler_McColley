@@ -1,0 +1,199 @@
+
+/*TITLE*/
+.title{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000000;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.background{
+  background-color: black;
+  z-index: -10;
+  margin: 0;
+}
+/*BACKGROUND IMAGE*/
+.image{
+    background-image: url(../src/bio.jpeg);
+    background-size: cover;
+    background-position: 70% center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: none;
+    margin-top: 0;
+  }
+
+  /*TEXT BOX*/
+  .outer-box {
+    display: inline-flex;
+    max-width: 30%;
+    min-width: 200px;
+    background-color: rgba(60, 40, 31, 0.7); /* Dark brown/orange background color */
+    padding: 2vw;
+    align-self: flex-start;
+    margin-left: -55%;
+    margin-top: 13%;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .outer-box::before,
+  .outer-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 94%;
+    height: 1vh;
+    background-color: rgba(0, 60, 0, 0.7); /* Grenadine Pink */
+  }
+
+  .outer-box::before {
+  top: 0;
+  left: 0;
+}
+  
+  .inner-box {
+    padding: 2vw;
+    color: #F8F8FF; /* Off white color */
+    
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.2rem; /* Adjust the font size as desired */
+    line-height: 1.5;
+  }
+
+  /* FEATURED TITLE */
+.featured-title{
+  display:none;
+}
+
+  /*LINK IMAGE*/
+  .link-image{
+    width:auto;
+    height: 70px;
+    position: absolute;
+    bottom: 40%;
+    left: 80%;
+    transform: translateX(-50%);
+  }
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 768px){
+    .featured-title{
+      display: block;
+      position: absolute;
+      top: 30%;
+      right: 17%;
+      transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width: 1200px){
+  .outer-box {
+    display: inline-flex;
+    max-width: 45%;
+    min-width: 30%;
+    background-color: rgba(60, 40, 31, 0.7); /* Dark brown/orange background color */
+    padding: 2vw;
+    margin-left: -55%;
+    margin-top: 13%;
+    position: absolute;
+    right: 50%;
+    bottom: 3%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+  /*
+  MOBILE VIEW
+  */
+
+  @media screen and (max-width: 650px){
+    .title{
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: black;
+      text-align: center;
+    }
+    
+    body.image{
+      background-image: url(../src/bio.jpeg);
+      background-size: cover;
+      background-position: 70% center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: none;
+      margin-top: 0;
+    }
+  
+    p {
+      margin: 0;
+      font-size: 0.75rem; /* Adjust the font size as desired */
+      line-height: 1.5;
+    }
+  
+    .outer-box {
+      display: inline-flex;
+      max-width: 20%;
+      min-width: 200px;
+      background-color: rgba(60, 40, 31, 0.7); /* Dark brown/orange background color */
+      padding: 2vw;
+      align-self: flex-start;
+      margin-left: 35%;
+      margin-top: 45%;
+      position: relative;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      right: 1%;
+      bottom: -4%;
+    }
+  
+    .outer-box::before,
+    .outer-box::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 94%;
+      height: 1vh;
+      background-color: rgba(0, 60, 0, 0.7); /* Grenadine Pink */
+    }
+  
+    .outer-box::before {
+      top: 0;
+      left: 0;
+    }
+      
+      .inner-box {
+        padding: 2vw;
+        color: #F8F8FF; /* Off white color */
+        
+      }
+  
+      .link-image{
+        width:auto;
+        height: 50px;
+        position: absolute;
+        bottom: 20px;
+        left: 70%;
+        transform: translateX(-50%);
+      }
+  }
+  
+
+

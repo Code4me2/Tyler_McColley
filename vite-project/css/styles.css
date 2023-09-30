@@ -1,0 +1,698 @@
+
+/* VIDEO / TITLE SETTINGS*/
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 100vh;
+  }
+  
+  .video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin: 0px;
+    transition: opacity 0.6s ease;
+    opacity: 1;
+  }
+
+  .video.scrolled-style{
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+
+  #background-video{
+      
+      transition: opacity 0.6s ease;
+  }
+  .video-title.initial-style{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 2;
+  font-size: 3rem; /* Adjust the font size as per your requirement */
+  color: black; /* Set the desired text color */
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+  }
+
+  .video-title.scrolled-style {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  font-size: 3rem;
+  color: white; /* Change text color to white */
+  width: 100%; /* Full width */
+  text-align: center; /* Center the text horizontally */
+  transition: all 0.6s ease; /* Add a transition for smooth changes */
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  }
+
+/* SOCIALS SETTINGS*/
+.socials-left.initial{
+    position: fixed;
+    top: 0;
+    left: 10px;
+    margin: 5px;
+    transition: background-color 0.6s ease;
+    display: block;
+}
+
+.socials-right.initial{
+    position: fixed;
+    top: 0;
+    margin: 5px;
+    right: 10px;
+    transition: background-color 0.6s ease;
+    display: block;
+}
+
+.socials-right.scrolled{
+    position: absolute;
+    bottom: 70%;
+    margin: 10px;
+    right: 5px;
+    transition: background-color 0.6s ease;
+    z-index: 10;
+    display: block;
+}
+
+.socials-left.scrolled{
+    position: absolute;
+    bottom: 70%;
+    margin: 10px;
+    left: 5px;
+    z-index: 10;
+    display: block;
+}
+
+.socials-buttonL.initial-style {
+    position: absolute;
+    display: block;
+    width: 4rem; /* Adjust the width as per your requirements */
+    height: 4rem; /* Adjust the height as per your requirements */
+    border: none;
+    background: var(--bg-image) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.6s ease;
+    background-color: none;
+    border-radius: 15%;
+    bottom: -50px;
+    left: 10px;
+    z-index: 10;
+  }
+
+.socials-buttonR.initial-style{
+    position: absolute;
+    display: block;
+    width: 4rem; /* Adjust the width as per your requirements */
+    height: 4rem; /* Adjust the height as per your requirements */
+    border: none;
+    background: var(--bg-image) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.6s ease;
+    background-color: none;
+    border-radius: 15%;
+    bottom: -50px;
+    right: 10px;
+    z-index: 10;
+}
+
+.socials-buttonR.scrolled-style {
+    position: absolute;
+    display: block;
+    width: 4rem; /* Adjust the width as per your requirements */
+    height: 4rem; /* Adjust the height as per your requirements */
+    border: none;
+    background: var(--bg-image) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.6s ease;
+    background-color: white;
+    border-radius: 15%;
+    bottom: -50px;
+    right: 10px;
+    z-index: 10;
+  }
+
+  .socials-buttonL.scrolled-style2{
+    position: absolute;
+    display: block;
+    width: 4rem; /* Adjust the width as per your requirements */
+    height: 4rem; /* Adjust the height as per your requirements */
+    border: none;
+    background: var(--bg-image) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.6s ease;
+    background-color: white;
+    border-radius: 15%;
+    bottom: -50px;
+    left: 10px;
+    z-index: 10;
+  }
+
+  .socials-buttonR a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 10;
+    }
+
+    .socials-buttonL a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 10;
+    }
+
+    .socials-buttonL.scrolled-style2 a{
+        z-index: 10;
+    }
+
+    .socials-buttonL.scrolled-style2:hover{
+        background-color: #e74c3c;
+    }
+
+    .socials-buttonR.scrolled-style:hover{
+        background-color: #e74c3c;
+    }
+
+  /* BIO SETTINGS*/
+  .booking-bio.initial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 35%;
+    transform: translateX(-50%);
+    z-index: 8;
+    margin: auto;
+    flex-direction: row;
+    gap: 20%;
+    transition: all 0.6s ease;
+}
+
+ .booking-bio.scrolled{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 35%;
+    transform: translateX(-50%);
+    z-index: 2;
+    margin: auto;
+    flex-direction: row;
+    gap: 20%;
+    transition: all 0.6s ease;
+    padding: 0px;
+}
+
+  .bio-button.initial {
+    border: none;
+    cursor: pointer;
+    background-color: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 2.3rem;
+    width: auto;
+    transition: all 0.6s ease;
+    border-radius: 5%;
+  }
+
+  .bio-buttonL.initial {
+    border: none;
+    cursor: pointer;
+    background-color: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 2.3rem;
+    width: auto;
+    transition: all 0.6s ease;
+    border-radius: 5%;
+  }
+
+  .bio-buttonL.initial :hover{
+    background-color: rgba(30, 144, 255, 0.8);
+    transition: background-color 0.3s ease, position 0.3s ease;
+  }
+  .bio-button.initial :hover {
+    background-color: rgba(30, 144, 255, 0.8);
+    transition: background-color 0.3s ease, position 0.3s ease;
+  }
+
+  .bio-buttonL.scrolled :hover{
+    color: #e74c3c;
+  }
+  .bio-button.scrolled :hover{
+    color: #e74c3c;
+  }
+
+  ul.bio-buttonL.scrolled{
+    padding-right: 20px;
+    padding-left: 0;
+  }
+.bio-button.scrolled a{
+    background-color: none;
+    color: whitesmoke;
+    z-index: 8;
+}
+.bio-buttonL.scrolled a{
+    background-color: none;
+    color: whitesmoke;
+    z-index: 8;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+  .bio-button a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 2.3rem;
+    height: auto; /* Adjust the height as per your requirements */
+    bottom: 20px;
+    right: 20px;
+    gap: 20%;
+    transition: background-color 0.5s ease, position 0.6s ease;
+    text-align: center;
+    color:  black;
+    z-index: 8;
+  }
+
+  .bio-buttonL a{
+    display: block;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 0px;
+    padding: 10px 20px;
+    font-size: 2.3rem;
+    height: auto; /* Adjust the height as per your requirements */
+    bottom: 20px;
+    right: 0px;
+    gap: 20%;
+    transition: background-color 0.5s ease, position 0.6s ease;
+    text-align: center;
+    color:  black;
+    z-index: 8;
+  }
+  
+
+/* TOGGLE BUTTON SETTINGS*/
+.layout-switch-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px;
+    right: 10px;
+    transition: background-color 0.6s ease;
+    z-index: 10;
+}
+
+.display-button {
+    background-color: whitesmoke;
+    border: 10px;
+    border-radius: 5%;
+    cursor: pointer;
+    padding: 30px;
+    margin: 10px;
+    border-radius: none;
+    transition: background-color 0.3s ease;
+    z-index:-10;
+    width: 35px;
+    height: 35px;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.display-button.scrolled{
+    opacity: 1;
+    z-index: 10;
+}
+.display-button:hover {
+    background-color: #e74c3c;
+}
+
+#row-button {
+    background-image: url(../src/horizontal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#grid-button {
+    background-image: url(../src/grid.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* BASIC SETTINGS*/
+
+.button-super{
+    margin-top: 60px;
+}
+.background{
+    background-color: black;
+    margin: 0px;
+}
+.title{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+}
+
+.image-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.container.scrolled{
+    opacity: 1;
+}
+.portfolio-image {
+    width: 30%;
+    margin: 1%;
+    object-fit: contain;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+#modal-image {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/*medium large settings*/
+@media screen and (max-width : 1200px) {
+    .video-title.initial-style{
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        font-size: 2.5rem; /* Adjust the font size as per your requirement */
+        color: black; /* Set the desired text color */
+        margin-bottom: 0;
+        transition: all 0.6s ease;
+        }
+      
+        .video-title.scrolled-style {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        font-size: 2.5rem;
+        color: white; /* Change text color to white */
+        width: 100%; /* Full width */
+        text-align: center; /* Center the text horizontally */
+        transition: all 0.6s ease; /* Add a transition for smooth changes */
+        left: 50%;
+        transform: translateX(-50%);
+        }
+
+        .bio-button a{
+            display: block;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 2rem;
+            height: auto; /* Adjust the height as per your requirements */
+            bottom: 20px;
+            right: 20px;
+            gap: 20%;
+            transition: background-color 0.5s ease, position 0.6s ease;
+            text-align: center;
+            color:  black;
+            z-index: 8;
+          }
+          .bio-buttonL a{
+            display: block;
+            text-decoration: none;
+            padding-right: 10px;
+            padding-left: 0px;
+            padding: 10px 20px;
+            font-size: 2rem;
+            height: auto; /* Adjust the height as per your requirements */
+            bottom: 20px;
+            right: 0px;
+            gap: 20%;
+            transition: background-color 0.5s ease, position 0.6s ease;
+            text-align: center;
+            color:  black;
+            z-index: 8;
+          }
+}
+
+/*medium small settings*/
+@media screen and (max-width : 955px) {
+    .video-title.initial-style{
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem; /* Adjust the font size as per your requirement */
+        }
+      
+        .video-title.scrolled-style { 
+        top: 25%;
+        left: 0;
+        font-size: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+
+        .bio-button a{
+            font-size: 1.5rem;
+            right: 0px;
+          }
+          .bio-buttonL a{
+            padding-right: 10px;
+            padding-left: 0px;
+            font-size: 1.5rem;
+            right: 0px;
+            padding: 10px 20px;
+          }
+          ul.bio-buttonL.scrolled{
+            padding-right: 0px;
+            padding-left: 0;
+          }
+          .socials-buttonL.initial-style {
+            width: 2rem; /* Adjust the width as per your requirements */
+            height: 2rem; /* Adjust the height as per your requirements */
+          }
+        
+        .socials-buttonR.initial-style{
+            width: 2rem; /* Adjust the width as per your requirements */
+            height: 2rem; /* Adjust the height as per your requirements */
+        }
+        
+        .socials-buttonR.scrolled-style {
+            width: 2rem; /* Adjust the width as per your requirements */
+            height: 2rem; /* Adjust the height as per your requirements */
+          }
+        
+          .socials-buttonL.scrolled-style2{
+            width: 2rem; /* Adjust the width as per your requirements */
+            height: 2rem; /* Adjust the height as per your requirements */
+          }
+}
+
+@media screen and (max-width : 750px) {
+    .booking-bio.initial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        bottom: 30%;
+        transform: translateX(-50%);
+        z-index: 8;
+        margin: auto;
+        flex-direction: row;
+        gap: 20%;
+        transition: all 0.6s ease;
+    }
+    
+     .booking-bio.scrolled{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        bottom: 30%;
+        transform: translateX(-50%);
+        z-index: 2;
+        margin: auto;
+        flex-direction: row;
+        gap: 20%;
+        transition: all 0.6s ease;
+        padding: 0px;
+    }
+}
+
+/*mobile settings*/
+@media screen and (max-width: 600px) {
+  /* video/title */  
+  .video-title.initial-style{
+        font-size: 1.9rem;
+        font-weight:bolder;
+        letter-spacing: 0.2em;
+        line-height: 1.5;
+        top: 20%;
+        position:absolute;
+    }
+    .video-title.scrolled-style {
+        
+
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.6s ease;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        top: 0; /* Adjust the top value to your preferred position */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+        color: black;
+    }
+  /* bio button */
+    .bio-button.initial{
+        background-color: rgba(30, 144, 255, 0.5);
+        padding: 5px 10px;
+    }
+    .bio-buttonL.initial{
+        background-color: rgba(30, 144, 255, 0.5);
+        padding: 5px 10px;
+        transition: all 0.6s ease;
+    }
+    .booking-bio.initial{
+        bottom: 45%;
+    }
+    .booking-bio.scrolled{
+        bottom: 40%;
+        z-index: 9;
+        height: 2px;
+    }
+    .bio-button.scrolled a{
+      z-index: 80;
+  }
+  .bio-buttonL.scrolled a{
+     z-index: 80;
+  }
+  /* socials & display button */
+    .socials-buttonL.initial-style{
+      opacity: 0;
+    }
+    .socials-buttonR.initial-style{
+      opacity: 0;
+    }
+    .socials-buttonL.scrolled-style2{
+        opacity: 1;
+        position: absolute;
+        right: 40px;
+        left: auto;
+        transition: opacity 0.6s ease;
+        z-index: 80;
+    }
+    .socials-buttonR.scrolled-style{
+        opacity: 1;
+        position: absolute;
+        right: 40px;
+        z-index: 80;
+        transition: opacity 1s ease;
+    }
+    .socials-left.scrolled{
+       opacity: 1; 
+       position: absolute;
+        bottom: 20%;
+        margin: 10px;
+        right: 5px;
+        left: auto;
+        transition: background-color 0.6s ease;
+        z-index: 10;
+        display: block;
+        opacity: 1;
+    }
+    .socials-right.scrolled{
+        position: absolute;
+        bottom: 30%;
+        margin: 10px;
+        right: 5px;
+        transition: background-color 0.6s ease;
+        z-index: 10;
+        display: block;
+    }
+    .display-button.scrolled{
+        opacity: 0;
+        z-index: -30;
+    }
+    .layout-switch-container{
+      display: none;
+      z-index: -30;
+    }
+    .display-button{
+      opacity: 0;
+      z-index: -30;
+  }
+  img.scrolled{
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+}
+
+
+/* footer */
+footer{
+    text-align: center;
+    position:relative;
+    z-index: -3;
+}

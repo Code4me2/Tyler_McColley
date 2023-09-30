@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" content="css" href="css/styles.css">
+    <link rel="stylesheet" content="css" href="css/test.css">
+    <link rel="icon" type="image/jpeg" href="src/signature_square.jpeg" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <title>Tyler McColley Photography</title>
+</head>
+<body class="background">
+    <!--TITLE-->
+    <section class="video-section">
+         <!-- SOCIALS -->
+        <div class="socials-left initial" id="social-containerL">
+            <ul>
+                <li class="socials-buttonL initial-style" id="socials" style="--bg-image:url('../src/insta_logo.png')">
+                    <a href="https://www.instagram.com/ty.shots/"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="socials-right initial" id="social-containerR">
+            <ul>
+                <li class="socials-buttonR initial-style" id="socialR" style="--bg-image:url('../src/x_logo.png')">
+                    <a href="https://twitter.com/tylermcc__"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="video-title initial-style" id="title-id">
+          <h1>TYLER McCOLLEY</h1>
+        </div>
+        <!--BOOKING-->
+        <div class="booking-bio initial" id="booking-container">
+                <ul class="bio-buttonL initial" id="bookingL">
+                    <a href = "bio.html">BOOK</a>
+                </ul>
+                <ul class="bio-button initial" id="bioR">
+                    <a href = "bio.html">BIO</a>
+                </ul>
+        </div>
+        
+        <video class="video" id="background-video" autoplay muted loop playsinline>
+            <source src="src/frontPage.mp4" type="video/mp4">
+            <source src="src/home_video.webm" type="video/webm">
+        </video>
+        
+      </section>
+      <!-- DISPLAY TOGGLE -->
+      <div class = "layout-switch-container">
+        <button class= "display-button" id="row-button"></button>
+        <button class= "display-button" id="grid-button"></button>
+      </div>   
+    <!--CONTACT INFORMATION-->
+    <!--IMAGES-->
+    <div id="gallery-container">
+        <div id="galleryDisplay">
+        <!-- JS loops through images and creates div content -->
+        </div>
+    </div>
+    <div id="modal">
+        <img id="modal-image">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src ="js/tyler.js"></script>
+</body>
+</html>
+<footer>
+    <p>&copy; 2023 "Tyler McColley" --- All rights reserved.</p>
+</footer>
