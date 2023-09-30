@@ -41,7 +41,7 @@ if (window.innerWidth <= 600){
 let img = document.createElement('img');
 
 // Set the image source
-img.src = '../src/IMG_4660.JPG';
+img.src = 'src/IMG_4660.JPG';
 
 // Copy the class from the video to the image
 img.className = video.className;
@@ -261,7 +261,7 @@ let images = [
    
     {src: 'src/DSC01714.jpg', alt: 'image 10'},
     {src: 'src/0027.jpg', alt: 'image 2'},
-    {src: '../src/DSC01708.jpg', alt: 'image 12'},
+    {src: 'src/DSC01708.jpg', alt: 'image 12'},
     {src: 'src/IMG_9845.JPG', alt: 'image 22'},
     {src: 'src/IMG_1738.jpg', alt: 'image 14'},
     {src: 'src/0025.jpg', alt: 'A New Hope'},
@@ -279,7 +279,7 @@ let images = [
     {src: 'src/IMG_5804.JPG', alt: 'image 17'},
     {src: 'src/IMG_9129.JPG', alt: 'image 18'},
     {src: 'src/IMG_9264.jpg', alt: 'image 19'},
-    {src: '../src/DSC02969_copy_2.jpg', alt: 'image 20'},
+    {src: 'src/DSC02969_copy_2.jpg', alt: 'image 20'},
     {src: 'src/IMG_9538.JPG', alt: 'image 21'},
     {src: 'src/0026.jpg', alt: 'Image 1'},
     {src: 'src/RNI-Aero-IMG-5F910173-B624-4669-8DD9-94DADAD13CBA.JPG', alt: 'image 23'},
